@@ -1,5 +1,6 @@
 <?php
 
+// Testing Git
 // CREATES THE JAVASCRIPT ARRAY FROM A DATABASE QUERY
 require_once('connect.php');
 
