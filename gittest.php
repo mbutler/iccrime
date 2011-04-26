@@ -1,5 +1,5 @@
 <?php
 
-echo "oh yeah, hi there Git!!";
+echo "u mad, bro?";
 
 ?>
