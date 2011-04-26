@@ -1,5 +1,5 @@
 <?php
 
-echo "u mad, bro?";
+echo "u mad, broseph?";
 
 ?>
