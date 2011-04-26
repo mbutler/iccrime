@@ -1,1 +1,4 @@
 <?php `git pull`;
+echo "pulling????";
+
+?>
