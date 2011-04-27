@@ -39,7 +39,7 @@ array_shift($charges);
 <div id="charges-select">
     <form method="POST" action="map.php">
         <select name="charge">
-        <option selected  value="<?php echo $chargeDesc; ?>"><?php echo $chargeDesc; ?></option>';
+        <option selected  value="<?php echo $chargeDesc; ?>"><?php echo $chargeDesc; ?></option>
         
         <?php
         foreach ($charges as $charge)
