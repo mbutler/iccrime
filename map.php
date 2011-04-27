@@ -58,10 +58,12 @@
 </div>
 -->
   
-<?php 
+<?php
+
+echo '<div id="menu">';
 include_once('charges-select.php'); 
 echo "Total charges: $totalCharges";
-
+echo '</div>';
 
 ?>
 
