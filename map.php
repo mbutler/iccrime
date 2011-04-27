@@ -49,12 +49,14 @@
 
 <body onLoad="initialize()">
 <div id="map-canvas"></div>
-<div id="twitter">
-<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script src="twitter.js">
 
-</script>
+<!--
+<div id="twitter">
+	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script src="twitter.js">
+    </script>
 </div>
+-->
   
 <?php 
 include_once('charges-select.php'); 
