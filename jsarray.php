@@ -6,12 +6,20 @@ require_once('connect.php');
 
 if(isset($_POST['charge'])) $charge = $_POST['charge'];
 
+//basic
 $result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' GROUP BY arrests.name") or die(mysql_error());
 
+//Sorts by charges and address
+//$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND arrests.address LIKE '%chicago%' GROUP BY arrests.name") or die(mysql_error());
+
+//Sorts on keywords, good for presets
 //$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge LIKE '%Marijuana%' GROUP BY arrests.name") or die(mysql_error());
-//$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident GROUP BY arrests.name") or die(mysql_error());
+
+//Everyone from Chicago
 //$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE address LIKE '%chicago%'");
-//$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE arrests_id >571");
+
+//All arrests from Chicago and Cedar Rapids people
+//$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE arrests_id >571 AND arrests.address LIKE '%chicago%' OR arrests.address LIKE '%cedar rapids%' GROUP BY arrests.name");
 
 mysql_close('$con');
 
