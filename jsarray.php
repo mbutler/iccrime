@@ -5,6 +5,8 @@
 require_once('connect.php');
 
 if(isset($_POST['charge'])) $charge = $_POST['charge'];
+$intervalLength = 1;
+$intervalType = "WEEK";
 
 //basic
 //$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' GROUP BY arrests.name") or die(mysql_error());
@@ -21,8 +23,8 @@ if(isset($_POST['charge'])) $charge = $_POST['charge'];
 //All arrests from Chicago and Cedar Rapids people
 //$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE arrests_id >571 AND arrests.address LIKE '%chicago%' OR arrests.address LIKE '%cedar rapids%' GROUP BY arrests.name");
 
-//Everything in the last month
-$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE DATE_SUB(CURDATE(),INTERVAL 1 WEEK) <= arrest_date GROUP BY arrests.name") or die(mysql_error());
+//Everything in the last week using variables
+$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND DATE_SUB(CURDATE(),INTERVAL $intervalLength $intervalType) <= arrest_date GROUP BY arrests.name") or die(mysql_error());
 
 mysql_close('$con');
 
