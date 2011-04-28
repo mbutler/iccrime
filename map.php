@@ -7,8 +7,10 @@
   html { height: 100% }
   body { height: 100%; margin: 0px; padding: 0px }
   #map-canvas { width:100%; height:80%; margin-left:auto; margin-right:auto }  
-  #twitter {float:right; margin-top:0px; margin-right:5px; }
+  #twitter {float:right; margin-top:0px; margin-right:5px; }  
 </style>
+
+<link rel="stylesheet" type="text/css" href="styles/calendar.css" />
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;key=ABQIAAAAyKvoewEZHDrxno8dLXDMzRQJXjB0u3QGjsHVUW4sna7H3Xy6fxRrTSLNWu7CMuKSw8up2ALkW7rfdA">
 </script>
