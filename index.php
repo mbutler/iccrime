@@ -1,1 +1,1 @@
-Coming Soon
+<?php echo 'coming soon'; ?>
