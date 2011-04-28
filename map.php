@@ -13,6 +13,8 @@
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;key=ABQIAAAAyKvoewEZHDrxno8dLXDMzRQJXjB0u3QGjsHVUW4sna7H3Xy6fxRrTSLNWu7CMuKSw8up2ALkW7rfdA">
 </script>
 
+<script language="javascript" src="calendar/calendar.js"></script>
+
 <script type="text/javascript">
 	var infowwindow = null;
 	
@@ -60,10 +62,16 @@
   
 <?php
 
-echo '<div id="menu">';
-include_once('charges-select.php'); 
+
+include_once('charges-select.php');
+include_once('datepicker.php'); 
+
+
+
+echo '<br />';
+echo '<br />';
 echo "Total charges: $totalCharges";
-echo '</div>';
+
 
 ?>
 
