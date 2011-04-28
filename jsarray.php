@@ -9,7 +9,7 @@ $intervalLength = 1;
 $intervalType = "WEEK";
 
 //basic
-//$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' GROUP BY arrests.name") or die(mysql_error());
+$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' GROUP BY arrests.name") or die(mysql_error());
 
 //Sorts by charges and address
 //$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND arrests.address LIKE '%chicago%' GROUP BY arrests.name") or die(mysql_error());
@@ -27,7 +27,7 @@ $intervalType = "WEEK";
 //$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND DATE_SUB(CURDATE(),INTERVAL $intervalLength $intervalType) <= arrest_date GROUP BY arrests.name") or die(mysql_error());
 
 //charges in a date range
-$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND arrest_date BETWEEN '2011-03-01' AND '2011-03-31' GROUP BY arrests.name") or die(mysql_error());
+//$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND arrest_date BETWEEN '2011-03-01' AND '2011-03-31' GROUP BY arrests.name") or die(mysql_error());
 
 mysql_close('$con');
 
