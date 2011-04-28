@@ -151,7 +151,7 @@ else
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>TriConsole.com - PHP Calendar Date Picker</title>
-<link href="calendar.css" rel="stylesheet" type="text/css" />
+<link href="../styles/calendar.css" rel="stylesheet" type="text/css" />
 <script language="javascript">
 <!--
 function setValue(){
