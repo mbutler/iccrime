@@ -120,8 +120,8 @@ class tc_calendar{
 	
 	var $zindex = 1;
 	
-	var $v_align = "bottom";
-	var $h_align = "right";
+	var $v_align = "top";
+	var $h_align = "left";
 	var $line_height = 18; //for vertical align offset
 	
 	var $date_pair1 = "";
