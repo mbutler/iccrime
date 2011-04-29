@@ -62,20 +62,35 @@
 </div>
 -->
   
+
+
+<div id="options">
+    <form method="POST" action="map.php">
+    
+<?php 
+	include_once('charges-select.php'); 
+	echo '<br />';
+	include_once('datepicker.php'); 
+	echo '<br /><br />';
+?>
+
+    </form>
+</div>
+
+
+
+
+
 <?php
-
-
-include_once('charges-select.php');
-include_once('datepicker.php'); 
-
-
-
-echo '<br />';
-echo '<br />';
-echo "Total charges: $totalCharges";
+echo "Total charges: $totalCharges"; 
+echo "<br />";
+echo $beginDate ." ". $endDate;
 
 
 ?>
+
+
+
 
 
 </body>
