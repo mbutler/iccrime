@@ -5,6 +5,8 @@
 require_once('connect.php');
 
 if(isset($_POST['charge'])) $charge = $_POST['charge'];
+$beginDate = isset($_REQUEST["date3"]) ? $_REQUEST["date3"] : "";
+$endDate = isset($_REQUEST["date4"]) ? $_REQUEST["date4"] : "";
 $intervalLength = 1;
 $intervalType = "WEEK";
 
@@ -58,6 +60,7 @@ $places = substr($places, 0, -1);
 $places .= ");\n";
 
 echo $places;
+
 
 //echo "Total charges: $totalCharges";
 
