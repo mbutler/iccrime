@@ -27,7 +27,9 @@
 	  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);  
 	  var infowindow = new google.maps.InfoWindow({content: arrestDate+"\n"+charge});
 	  
-	 <?php if(isset($_POST['charge'])) include_once('jsarray.php'); ?>	 
+	 <?php 
+	 
+	 if(isset($_POST['charge'])) include_once('jsarray.php'); ?>	 
 	 
 	 for (var i in places)
 	 {
