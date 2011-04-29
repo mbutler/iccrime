@@ -37,7 +37,7 @@
 	   , date('Y', strtotime($date4_default)));
 	$myCalendar->setPath("calendar/");
 	$myCalendar->setYearInterval(1970, 2020);
-	$myCalendar->setAlignment('left', 'bottom');
+	$myCalendar->setAlignment('right', 'top');
 	$myCalendar->setDatePair('date3', 'date4', $date3_default);
 	$myCalendar->writeScript();	  
 
