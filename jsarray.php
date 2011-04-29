@@ -4,7 +4,7 @@
 // CREATES THE JAVASCRIPT ARRAY FROM A DATABASE QUERY
 require_once('connect.php');
 
-if(isset($_POST['charge'])) $charge = $_POST['charge'];
+$charge = isset($_POST['charge']) ? $_POST['charge'] : "";
 $beginDate = isset($_REQUEST["date3"]) ? $_REQUEST["date3"] : "";
 $endDate = isset($_REQUEST["date4"]) ? $_REQUEST["date4"] : "";
 $intervalLength = 1;
