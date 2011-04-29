@@ -84,7 +84,7 @@
 <?php
 echo "Total charges: $totalCharges"; 
 echo "<br />";
-echo $beginDate ." ". $endDate;
+
 
 
 ?>
