@@ -39,7 +39,7 @@ array_shift($charges);
 
         <select name="charge" />
         <option selected  value="<?php echo $chargeDesc; ?>"><?php echo $chargeDesc; ?></option>
-        
+        <option value='All Charges'>All Charges</option>
         <?php
         foreach ($charges as $charge)
         {
