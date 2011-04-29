@@ -31,6 +31,11 @@ $intervalType = "WEEK";
 //charges in a date range
 $result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND arrest_date BETWEEN '$beginDate' AND '$endDate' GROUP BY arrests.name") or die(mysql_error());
 
+if ($charge == "All Charges")
+{
+	$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE arrests_id >571 AND arrest_date BETWEEN '$beginDate' AND '$endDate' GROUP BY arrests.name");
+}
+
 mysql_close('$con');
 
 $totalCharges = 0;
