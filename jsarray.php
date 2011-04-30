@@ -8,9 +8,6 @@ $charge = isset($_POST['charge']) ? $_POST['charge'] : "";
 $home = isset($_POST['home']) ? $_POST['home'] : "";
 $beginDate = isset($_REQUEST["date3"]) ? $_REQUEST["date3"] : "";
 $endDate = isset($_REQUEST["date4"]) ? $_REQUEST["date4"] : "";
-$intervalLength = 1;
-$intervalType = "WEEK";
-
 
 
 //basic
