@@ -5,11 +5,12 @@
 require_once('connect.php');
 
 $charge = isset($_POST['charge']) ? $_POST['charge'] : "";
+$home = isset($_POST['home']) ? $_POST['home'] : "";
 $beginDate = isset($_REQUEST["date3"]) ? $_REQUEST["date3"] : "";
 $endDate = isset($_REQUEST["date4"]) ? $_REQUEST["date4"] : "";
 $intervalLength = 1;
 $intervalType = "WEEK";
-$city = "";
+
 
 
 //basic
@@ -31,11 +32,11 @@ $city = "";
 //$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND DATE_SUB(CURDATE(),INTERVAL $intervalLength $intervalType) <= arrest_date GROUP BY arrests.name") or die(mysql_error());
 
 //charges in a date range
-$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND arrest_date BETWEEN '$beginDate' AND '$endDate' AND arrests.address LIKE '%$city%' GROUP BY arrests.name") or die(mysql_error());
+$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE charges.charge = ' $charge ' AND arrest_date BETWEEN '$beginDate' AND '$endDate' AND arrests.address LIKE '%$home%' GROUP BY arrests.name") or die(mysql_error());
 
 if ($charge == "All Charges")
 {
-	$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE arrests_id >571 AND arrest_date BETWEEN '$beginDate' AND '$endDate' AND arrests.address LIKE '%$city%' GROUP BY arrests.name");
+	$result = mysql_query("SELECT * FROM arrests JOIN charges ON arrests.incident = charges.incident WHERE arrests_id >571 AND arrest_date BETWEEN '$beginDate' AND '$endDate' AND arrests.address LIKE '%$home%' GROUP BY arrests.name");
 }
 
 mysql_close('$con');
