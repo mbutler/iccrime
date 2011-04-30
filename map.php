@@ -7,7 +7,7 @@
   html { height: 100% }
   body { height: 100%; margin: 0px; padding: 0px }
   #map-canvas { width:100%; height:80%; margin-left:auto; margin-right:auto }  
-  #twitter {float:right; margin-top:0px; margin-right:5px; }  
+  #twitter {float:right; margin-top:0px; margin-right:5px; } 
 </style>
 
 <link rel="stylesheet" type="text/css" href="styles/calendar.css" />
