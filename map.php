@@ -69,12 +69,29 @@
 <div id="options">
     <form method="POST" action="map.php">
     
-<?php 
-	include_once('charges-select.php'); 
-	echo '<br />';
-	include_once('datepicker.php'); 
-	echo '<br /><br />';
-?>
+<table width="100%" border="0">
+  <tr>
+    <td colspan="3"><?php include_once('charges-select.php'); ?></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;<strong>Date Range:</strong></td>
+  </tr>
+  <tr>
+    <td width="3%"></td>
+    <td colspan="2" rowspan="3"><?php include_once('datepicker.php'); ?></td>
+  </tr>
+  <tr>
+    <td>&nbsp;Begin:</td>
+  </tr>
+  <tr>
+    <td>&nbsp;End:</td>
+  </tr>
+  <tr>
+    <td><input type="submit" /></td>
+    <td width="55%">&nbsp;</td>
+    <td width="42%">&nbsp;</td>
+  </tr>
+</table>
 
     </form>
 </div>
@@ -84,6 +101,7 @@
 
 
 <?php
+echo "<br />";
 echo "Total charges: $totalCharges"; 
 echo "<br />";
 
