@@ -2,21 +2,25 @@
 
 if(isset($_POST['home'])) 
 {
-	$homeDesc = $_POST['home'];
+	$homeDesc = $_POST['home'];	
 	
 	if ($homeDesc == "")
 	{
 		$homeDesc = "All Locations";
+		$homeValue = "";
+		
 	}
 } else
 {
-	$homeDesc = "--Home Location--";
+	$homeDesc = "All Locations";
+	$homeValue = "";
+	
 }
 
 ?>
 
 <select name="home">
-<option selected  value="<?php echo $homeDesc; ?>"><?php echo $homeDesc; ?></option>
+<option selected  value="<?php echo $homeValue; ?>"><?php echo $homeDesc; ?></option>
 <optgroup label="Default">
 	<option value="">All Locations</option>
 </optgroup>
