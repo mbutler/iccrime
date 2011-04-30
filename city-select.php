@@ -31,7 +31,8 @@ if(isset($_POST['home']))
     <option value="Chicago">Chicago</option>
     <option value="North Liberty">North Liberty</option>
 </optgroup>
-    <optgroup label="Dorms">
+
+<optgroup label="Dorms">
     <option value="Burge">Burge</option>
     <option value="Currier">Currier</option>
     <option value="Daum">Daum</option>
@@ -41,5 +42,9 @@ if(isset($_POST['home']))
     <option value="Rienow">Rienow</option>
     <option value="Slater">Slater</option>
     <option value="Stanley">Stanley</option>
+</optgroup>
+
+<optgroup label="Transient">
+	<option value="Unknown Address">Unknown Address</option>
 </optgroup>
 </select>
