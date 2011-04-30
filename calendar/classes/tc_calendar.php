@@ -235,6 +235,7 @@ class tc_calendar{
 				echo(" <a href=\"javascript:toggleCalendar('".$this->objname."');\">");
 				$this->writeDateContainer();
 				echo("</a>");
+				
 			}			
 			
 			echo(" <a href=\"javascript:toggleCalendar('".$this->objname."');\">");						
@@ -244,6 +245,7 @@ class tc_calendar{
 			echo("</a>");
 			
 			$this->writeCalendarContainer();
+			
 			
 			echo("</div>");
 		}else{
