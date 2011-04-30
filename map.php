@@ -71,14 +71,17 @@
     
 <table width="100%" border="0">
   <tr>
-    <td colspan="3"><?php include_once('charges-select.php'); ?></td>
+    <td colspan="4"><?php include_once('charges-select.php'); ?></td>
   </tr>
   <tr>
     <td colspan="3">&nbsp;<strong>Date Range:</strong></td>
+    <td><strong>Home:</strong></td>
   </tr>
   <tr>
-    <td width="3%"></td>
-    <td colspan="2" rowspan="3"><?php include_once('datepicker.php'); ?></td>
+    <td width="4%"></td>
+    <td rowspan="3"><?php include_once('datepicker.php'); ?></td>
+    <td rowspan="3">&nbsp;</td>
+    <td rowspan="3"><?php include_once('city-select.php'); ?> </td>
   </tr>
   <tr>
     <td>&nbsp;Begin:</td>
@@ -88,8 +91,8 @@
   </tr>
   <tr>
     <td><input type="submit" /></td>
-    <td width="55%">&nbsp;</td>
-    <td width="42%">&nbsp;</td>
+    <td width="3%" colspan="2">&nbsp;</td>
+    <td width="93%">&nbsp;</td>
   </tr>
 </table>
 
