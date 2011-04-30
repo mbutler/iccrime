@@ -69,7 +69,7 @@
 <div id="options">
     <form method="POST" action="map.php">
     
-<table width="100%" border="0">
+<table width="50%" border="0">
   <tr>
     <td colspan="4"><?php include_once('charges-select.php'); ?></td>
   </tr>
