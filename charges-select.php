@@ -5,9 +5,10 @@ require_once('connect.php');
 if(isset($_POST['charge'])) 
 {
 	$chargeDesc = $_POST['charge'];
+	
 } else
 {
-	$chargeDesc = "--Select a Charge--";
+	$chargeDesc = "All Charges";
 }
 
 $result = mysql_query("SELECT charge FROM charges") or die(mysql_error()); 
