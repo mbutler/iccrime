@@ -47,6 +47,6 @@ array_shift($charges);
         }
         ?>
         
-        <input type="submit" />
+        
         
 
