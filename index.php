@@ -8,6 +8,8 @@
   body { height: 100%; margin: 0px; padding: 0px }
   #map-canvas { width:100%; height:80%; margin-left:auto; margin-right:auto }  
   #twitter {float:right; margin-top:0px; margin-right:5px; } 
+  #options {width: 200px;}
+  #options-label {width: auto;}
 </style>
 
 <link rel="stylesheet" type="text/css" href="styles/calendar.css" />
@@ -68,40 +70,31 @@
 
 <div id="options">
     <form method="POST" action="<?php echo $PHP_SELF; ?>">
-    
-<table width="50%" border="0">
+<table width="200px" border="0">
   <tr>
-    <td colspan="4"><?php include_once('charges-select.php'); ?></td>
+    <td colspan="3"><?php include_once('charges-select.php'); ?></td>
   </tr>
   <tr>
-    <td colspan="3">&nbsp;<strong>Date Range:</strong></td>
-    <td><strong>Home:</strong></td>
+    <td width="33%">&nbsp;<strong>Date Range:</strong></td>
+    <td width="33%"></td>
+    <td width="33%"><strong>Home:</strong></td>
   </tr>
   <tr>
-    <td width="4%"></td>
-    <td rowspan="3"><?php include_once('datepicker.php'); ?></td>
-    <td rowspan="3">&nbsp;</td>
-    <td rowspan="3"><?php include_once('city-select.php'); ?> </td>
+    <td width="33%" height="20">&nbsp;Begin:</td>
+    <td width="33%" rowspan="2"><?php include_once('datepicker.php'); ?></td>
+    <td width="33%"rowspan="2"><?php include_once('city-select.php'); ?> </td>
   </tr>
   <tr>
-    <td>&nbsp;Begin:</td>
+    <td width="33%" height="50%">&nbsp;End:</td>
   </tr>
   <tr>
-    <td>&nbsp;End:</td>
-  </tr>
-  <tr>
-    <td><input type="submit" /></td>
-    <td width="3%" colspan="2">&nbsp;</td>
-    <td width="93%">&nbsp;</td>
+    <td width="33%"><input type="submit" /></td>
+    <td width="33%">&nbsp;</td>
+    <td width="33%">&nbsp;</td>
   </tr>
 </table>
-
     </form>
 </div>
-
-
-
-
 
 <?php
 echo "<br />";
