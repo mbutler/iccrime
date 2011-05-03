@@ -1,6 +1,6 @@
 <html>
 <head>
-<meta http-equiv="refresh" content="1"
+<!-- <meta http-equiv="refresh" content="1" -->
 </head>
 <body>
 </body>
