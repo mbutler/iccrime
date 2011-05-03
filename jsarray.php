@@ -11,6 +11,8 @@ $startAge = isset($_POST["start-age"]) ? $_POST["start-age"] : "";
 $endAge = isset($_POST["end-age"]) ? $_POST["end-age"] : "";
 
 if ($home == "Unknown Address") $home = "unknown";
+if ($home == "All Locations") $home = "";
+
 
 
 //charges in a date range
@@ -22,6 +24,8 @@ if ($charge == "All Charges")
 }
 
 mysql_close('$con');
+
+$home = "All Locations";
 
 // get the number of rows in the result
 $numRows = mysql_num_rows($result);
@@ -60,6 +64,8 @@ if($numRows == 0)
 {
 	echo $places;
 }
+
+
 
 
 ?>
