@@ -77,12 +77,12 @@
   <tr>
     <td width="33%">&nbsp;<strong>Date Range:</strong></td>
     <td width="33%"></td>
-    <td width="33%"><strong>Home: <?php include_once('city-select.php'); ?></strong></td>
+    <td width="33%"><strong>Home:&nbsp; <?php include_once('city-select.php'); ?></strong></td>
   </tr>
   <tr>
     <td width="33%" height="20">&nbsp;Begin:</td>
     <td width="33%" rowspan="2"><?php include_once('datepicker.php'); ?></td>
-    <td width="33%"rowspan="2"><strong>Age Range: </strong> <select name="start-age"><?php include('age-select-begin.php'); ?> </select>&nbsp;&nbsp;to&nbsp;&nbsp;<select name="end-age"><?php include('age-select-end.php'); ?> </select></td>
+    <td width="33%"rowspan="2"><strong>Age Range: </strong> <select name="start-age"><?php include('age-select-begin.php'); ?> </select>&nbsp;to&nbsp;<select name="end-age"><?php include('age-select-end.php'); ?> </select></td>
   </tr>
   <tr>
     <td width="33%" height="50%">&nbsp;End:</td>
