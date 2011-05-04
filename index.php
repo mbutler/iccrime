@@ -8,7 +8,7 @@
   body { height: 100%; margin: 0px; padding: 0px }
   #map-canvas { width:100%; height:80%; margin-left:auto; margin-right:auto }  
   #twitter {float:right; margin-top:0px; margin-right:5px; } 
-  #options {width: 200px;}
+  #options {width: 200px; margin: 10px;}
   #options-label {width: auto;}
 </style>
 
@@ -70,43 +70,34 @@
 
 <div id="options">
     <form method="POST" action="<?php echo $PHP_SELF; ?>">
-<table width="200px" border="0">
+<table border="0">
   <tr>
-    <td colspan="3"><?php include_once('charges-select.php'); ?></td>
+    <td colspan="4"><?php include_once('charges-select.php'); ?></td>
   </tr>
   <tr>
-    <td width="33%">&nbsp;<strong>Date Range:</strong></td>
-    <td width="33%"></td>
-    <td width="33%"><strong>Home:&nbsp; <?php include_once('city-select.php'); ?></strong></td>
+    <td colspan="4"><strong>&nbsp;Date Range:</strong></td>
   </tr>
   <tr>
-    <td width="33%" height="20">&nbsp;Begin:</td>
-    <td width="33%" rowspan="2"><?php include_once('datepicker.php'); ?></td>
-    <td width="33%"rowspan="2"><strong>Age Range: </strong> <select name="start-age"><?php include('age-select-begin.php'); ?> </select>&nbsp;to&nbsp;<select name="end-age"><?php include('age-select-end.php'); ?> </select></td>
+    <td width="15%" height="15"><strong>&nbsp;Begin:</strong></td>
+    <td width="45%" rowspan="2"><?php include_once('datepicker.php'); ?></td>
+    <td width="25%"><strong>Home:</strong></td>
+    <td width="15%"><?php include_once('city-select.php'); ?></td>
   </tr>
   <tr>
-    <td width="33%" height="50%">&nbsp;End:</td>
+    <td height="15"><strong>&nbsp;End:</strong></td>
+    <td><strong>Age Range:</strong></td>
+    <td><select name="start-age"><?php include('age-select-begin.php'); ?> </select>&nbsp;to&nbsp;<select name="end-age"><?php include('age-select-end.php'); ?> </select></td>
   </tr>
   <tr>
-    <td width="33%"><input type="submit" /></td>
-    <td width="33%">&nbsp;</td>
-    <td width="33%">&nbsp;</td>
+    <td colspan="4"><input type="submit" /></td>
+  </tr>
+  <tr>
+    <td colspan="4">&nbsp;<?php echo "Total charges: $totalCharges"; ?></td>
   </tr>
 </table>
+
     </form>
 </div>
-
-<?php
-echo "<br />";
-echo "Total charges: $totalCharges"; 
-echo "<br />";
-
-
-
-?>
-
-
-
 
 
 </body>
