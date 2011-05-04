@@ -72,19 +72,22 @@
     <form method="POST" action="<?php echo $PHP_SELF; ?>">
 <table border="0">
   <tr>
+    <td colspan="4"><strong>&nbsp;Charge Type:</strong></td>
+  </tr>
+  <tr>
     <td colspan="4"><?php include_once('charges-select.php'); ?></td>
   </tr>
   <tr>
     <td colspan="4"><strong>&nbsp;Date Range:</strong></td>
   </tr>
   <tr>
-    <td width="15%" height="15"><strong>&nbsp;Begin:</strong></td>
+    <td width="15%" height="15">&nbsp;Begin:</td>
     <td width="45%" rowspan="2"><?php include_once('datepicker.php'); ?></td>
     <td width="25%"><strong>Home:</strong></td>
     <td width="15%"><?php include_once('city-select.php'); ?></td>
   </tr>
   <tr>
-    <td height="15"><strong>&nbsp;End:</strong></td>
+    <td height="15">&nbsp;End:</td>
     <td><strong>Age Range:</strong></td>
     <td><select name="start-age"><?php include('age-select-begin.php'); ?> </select>&nbsp;to&nbsp;<select name="end-age"><?php include('age-select-end.php'); ?> </select></td>
   </tr>
