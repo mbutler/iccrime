@@ -22,7 +22,7 @@
 	
 	$myCalendar = new tc_calendar("date3", true, false);
 	$myCalendar->setIcon("calendar/images/iconCalendar.gif");
-	$myCalendar->setDate(1, 9, 2010);
+	$myCalendar->setDate(16, 8, 2010);
 	$myCalendar->setDateFormat('m.d.y');
 	//$myCalendar->setDateFormat('F j, Y');
 	$myCalendar->setPath("calendar/");
@@ -42,7 +42,6 @@
 	//$myCalendar->setDateFormat('F j, Y');
 	$myCalendar->setPath("calendar/");
 	$myCalendar->setYearInterval(1970, 2020);
-	$myCalendar->setAlignment('right', 'top');
 	$myCalendar->setDatePair('date3', 'date4', $date3_default);
 	$myCalendar->writeScript();	
 	
