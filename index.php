@@ -14,7 +14,7 @@
 
 <link rel="stylesheet" type="text/css" href="styles/calendar.css" />
 
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;key=ABQIAAAAyKvoewEZHDrxno8dLXDMzRQJXjB0u3QGjsHVUW4sna7H3Xy6fxRrTSLNWu7CMuKSw8up2ALkW7rfdA">
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;key=YOURGOOGLEKEY">
 </script>
 
 <script language="javascript" src="calendar/calendar.js"></script>
