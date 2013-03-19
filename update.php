@@ -10,7 +10,7 @@
 
 require_once('connect.php');
 
-$api ="998ed1d22c4d13e5c17de899c7ad397b7280b926";
+$api ="";
 //41.657825 -91.526534 is the default coord it returns when it can't parse the address
 //41.647156	-91.536301 is another default coord it returns when it can't parse the address
 //1.000000 lat and lng are for special cases to examine
